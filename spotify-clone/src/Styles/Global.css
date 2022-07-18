@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap');
+
+/* Variables */
+:root {
+
+    /* Font*/
+    --font: 'Raleway', sans-serif;
+    --hero: 80px;
+    --huge: 64px;
+    --title: 42px;
+    --sub-title: 40px;
+    --sub: 18px;
+    --normal: 16px;
+    --paragraph: 13px;
+
+    /* Colors*/
+    --green:#1ED760;
+    --black: #000;
+    --white: #fff;
+    --purple: #2941AB; 
+    --blackish:#222326; 
+    --grey: #919496;      
+}
+
+/* ============================= Navbar ============================= */
+body {
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    padding: 0;
+    font-family: var(--font);
+}
+
+a {text-decoration: none;}
+
+.Nav {
+    background-color: var(--black);
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--normal);
+    top: 0;
+    z-index: 999;
+    padding: 0 15px;
+}
+
+.Navbar-Container {
+    display: flex;
+    height: 90px;
+    margin-top: 20px;
+    padding-top: 17px;
+}
+
+.Navbar-Left-Container{
+    justify-content: start;
+}
+
+.Navbar-Right-Container {
+    justify-content: end;
+}
+
+
+.Navbar-logo {
+    width: 20%;
+    padding: 15px;
+    margin-top: -10px;
+    justify-self: flex-start;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;    
+}
+
+.Navbar-right-inside {
+    display: flex;
+    justify-content: space-evenly;
+    gap: -120px;
+}
+
+
+.Navbar-ul {
+    color: var(--white);
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.Navbar-li {
+    padding-left: 40px;
+    width: 60px;
+    font-size: var(--normal);
+    cursor: pointer;
+}
+
+.seperator {
+    border-left: 3px solid var(--white);
+    height: 80%;
+    color: transparent;      
+}
+
+.Navbar-li:hover {
+    color: var(--green);
+}
+
+.container{
+    height: 20px;
+    border-left: 3px solid #fff;
+    margin-left: 50px;
+    margin-right: -50px;
+    margin-top: 15px;
+}
+
+/* ============================= Hero Section ============================= */
+.HeroSection-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--purple);
+    background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
+    background-size: 175%;
+    background-position: 46% 4%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-height: 846px;
+}
+
+.Hero-Header {
+    color: var(--green);
+    font-size: 140px;
+    font-weight: 900;
+}
+
+.HeroSection-Main-Container {
+    display: flex;
+    flex-direction: column;  
+}
+
+.first-header {
+    margin-top: -60px;
+    margin-left: -80px;
+}
+
+.second-header {
+    margin-top: -80px;
+    margin-left: 80px;
+    float: right;
+}
+
+.HeroSection-Secondairy-Text {
+    font-size: var(--sub);
+    color: var(--green);
+    font-weight: 500;
+    word-spacing: 1px;
+}
+
+.HeroSection-Secondairy-Button {
+    width: 40%;
+    padding: 18px;
+    border-radius: 45px;
+    background-color: var(--green);
+    color: var(--purple);
+    border: none;
+    text-transform: uppercase;
+    font-size: var(--paragraph);
+    font-weight: 800;
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+/* ============================= Footer ============================= */
+.Footer-main-container {
+
+    height: 100vh;
+    background-color: var(--black);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    margin-top: -20px;
+    height: 70vh;
+    background-color: var(--black);
+}
+
+.Footer-first-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+}
+
+
+
+.Footer-logo {
+    width: 160px;
+}
+
+.Footer-Logo-Links {
+    color: var(--white);
+    display: flex;
+}
+
+.Footer-ul {
+    margin-top: -8px;
+}
+
+.Footer-li {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-left: 20px;
+    
+}
+
+.Footer-li:hover {
+    color: var(--green);
+}
+
+.li-header {
+    text-transform: uppercase; 
+    pointer-events: none; 
+    color: var(--grey);
+    font-weight: 700;
+}
+
+.li-header:hover {
+    color: var(--white);
+}
+
+.Footer-Logo-Socials {
+    display: flex;
+    justify-content: space-between;
+    width: 13%;
+    padding: 15px;
+    margin-left: 20px;
+
+}
+
+.Footer-Socials {
+    border-radius: 50%;
+    background-color: var(--blackish);
+    height: 10%;
+    padding: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.social-icon {
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.Footer-second-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 80px;
+    margin-left: -20px;
+}
+
+.Footer-second-container-links {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.Footer-second-container-ul {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.Footer-second-container-li {
+    color: var(--grey);
+    list-style: none;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.Footer-second-container-li:hover {
+    color: var(--green);
+}
+
+.Footer-second-container-legal {
+    color: var(--grey);
+}
+
+.Footer-second-container-legal-text {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.Footer-second-container-legal-text-span {
+    font-size: 13px;
+    margin-left: 10px;
+    width: 120px;
+}
+
+.legal-icon {
+    padding-left: 10px;
+}
