@@ -1,9 +1,11 @@
-import React from 'react'
+import {React, useState} from 'react'
 import  logo  from '../../Assets/Spotify_Logo_RGB_White.png'
 import '../../Styles/Global.css'
+import { GiHamburgerMenu } from "react-icons/gi";
 
 
 function Navbar() {
+    //const [isMobile, setIsMobile] = useState(false);
   return (
     <div className='Nav'>
         <div className='Navbar-Container'>
@@ -24,7 +26,10 @@ function Navbar() {
                         <li className='Navbar-li'>Log in</li>
                     </ul>
                 </div>
-            </div>        
+            </div> 
+            <button className='Navbar-PhoneIcon-Container'>
+                <GiHamburgerMenu className='Navbar-PhoneIcon-icon'/>
+            </button>       
         </div>
     </div>
   )
